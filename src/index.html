@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <meta name="description" content="Kulbako A.Y. CV website"/>
+    <meta name="author" content="Kulbako Artemy Yuryevich"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--TODO: иконка-->
+    <link rel="stylesheet" href="resources/stylesheets/main.css">
+    <link rel="stylesheet" href="resources/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="resources/stylesheets/main.css">
+</head>
+<body id="app">
+
+    <!--TODO: фоновая музыка-->
+    <div class="fullscreen-bg-video d-none d-sm-block"> <!-- TODO: переименовать классы-->
+        <video loop autoplay muted>
+            <!--https://www.pexels.com/ru-ru/video/3320966/-->
+            <source type="video/mp4" src="resources/videos/ocean-background.mp4">
+        </video>
+    </div>
+
+    <nav class="navbar navbar-dark navbar-expand-md navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#">Curriculum vitae</a>
+            <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive"
+                    type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link active js-scroll-trigger" href="#overview">Обзор</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#position">Должность</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#experience">Опыт</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#education">Образование</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#languages">Языки</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#skills">Навыки</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="intro-body shadow-box">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 25px;">
+                            <br>Kotlin | Java developer<br>
+                        </h1>
+                        <p class="intro-text">Резюме кандидата</p>
+                        <a class="btn btn-link btn-circle" role="button" href="#overview">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="overview" class="content-section text-center" >
+       <div class="container">
+           <div class="col-lg-8 mx-auto">
+               <h2>Обзор</h2>
+           </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="profile-pic" width="240px" height="320px"></canvas>
+                    <!--<img src="resources/images/profile.png" alt="Фотография кандидата" width="250px">-->
+                </div>
+                <div class="col">
+                    <h3>Кульбако Артемий Юрьевич</h3>
+                    <p>Мужчина, 20 лет</p>
+                    <p>Место проживания - Санкт-Петербург</p>
+                    <p>Гражданство - Российская Федерация</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="position" class="download-section content-section text-center">
+        <div class="container w-100">
+            <h2>Желаемая должность и позиция</h2>
+            <p>Intern/Junior developer</p>
+            <p>Желаемая занятость: стажировка/частичная занятость</p>
+        </div>
+    </section>
+
+    <section id="experience" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Опыт работы</h2>
+                    <p>Молодёжный центр "Диалог"</p>
+                    <p>Имею большой опыт работы в "Трудовых отрядах старшеклассников" - не понаслышке знаком с ручным
+                        низкоквалифицированным трудом: уборка и ремонт помещений, благоустройство парковых и дворовых
+                        зон, что выработало во мне трудовую дисциплину.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Образование</h2>
+                    <h3>Университет ИТМО (2018-2022)</h3>
+                    <p>
+                        <a href="https://itmo.ru/ru/viewfaculty/104/fakultet_programmnoy_inzhenerii_i_kompyuternoy_tehniki.htm">Факультет программной инженерии и компьютерной техники</a>
+                    </p>
+                    <p>
+                        <a href="https://abit.itmo.ru/program/13297/">Направление подготовки - 09.03.04 Программная инженерия</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Языки</h2>
+                    <p>Русский - Родной</p>
+                    <p>Английский - B1 (Intermediate)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Навыки</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Контакты</h2>
+                    <p>Почта: <a href="mailto:kulbakowork@mail.ru">kulbakowork@mail.ru (предпочитаемый способ связи)</a></p>
+                    <p>Телефон: <a href="tel:+7952-382-5644">+7-952-382-5644</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="credit" class="container text-center">
+            <img src="resources/images/avatar.png" align="middle" alt="Аватар разработчика">
+            <a href="https://github.com/testpassword" class="illuminated animated" title="Перейти к профилю Github разработчика">Github разработчика</a>
+            <!--TODO: использованные библиотеки, технологии и т.д.-->
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="resources/scripts/scroll.js"></script>
+    <script src="resources/scripts/chromatic.js"></script>
+</body>
+
+</html>
