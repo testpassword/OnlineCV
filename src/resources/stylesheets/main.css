@@ -55,11 +55,12 @@ a:hover, a:focus {
     margin: 10px;
 }
 
-#skills .col {
+#skills .col, #education .col, #experience .col {
     padding: 30px;
 }
 
-#skills .col:hover, #skills .col:focus {
+#skills .col:hover, #skills .col:focus, #education .col:hover, #education .col:focus, #experience .col:hover,
+#experience .col:focus {
     transition: 0.455s;
     transform: scale(1.035);
     box-shadow: 0 0 40px 5px #1d9b6c;
