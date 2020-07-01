@@ -6,7 +6,7 @@
     <meta name="description" content="Kulbako A.Y. CV website"/>
     <meta name="author" content="Kulbako Artemy Yuryevich"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--TODO: иконка-->
+    <link rel="icon" href="resources/images/avatar.png">
     <link rel="stylesheet" href="resources/stylesheets/main.css">
     <link rel="stylesheet" href="resources/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -14,10 +14,8 @@
 </head>
 <body id="app">
 
-    <!--TODO: фоновая музыка-->
-    <div class="fullscreen-bg-video d-none d-sm-block"> <!-- TODO: переименовать классы-->
+    <div class="fullscreen-bg-video d-none d-sm-block">
         <video loop autoplay muted>
-            <!--https://www.pexels.com/ru-ru/video/3320966/-->
             <source type="video/mp4" src="resources/videos/ocean-background.mp4">
         </video>
     </div>
@@ -81,13 +79,12 @@
            <div class="col-lg-8 mx-auto">
                <h2>Обзор</h2>
            </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col">
                     <canvas id="profile-pic" width="240px" height="320px"></canvas>
-                    <!--<img src="resources/images/profile.png" alt="Фотография кандидата" width="250px">-->
                 </div>
                 <div class="col">
-                    <h3>Кульбако Артемий Юрьевич</h3>
+                    <p id="name">Кульбако Артемий Юрьевич</p>
                     <p>Мужчина, 20 лет</p>
                     <p>Место проживания - Санкт-Петербург</p>
                     <p>Гражданство - Российская Федерация</p>
@@ -99,8 +96,8 @@
     <section id="position" class="download-section content-section text-center">
         <div class="container w-100">
             <h2>Желаемая должность и позиция</h2>
-            <p>Intern/Junior developer</p>
-            <p>Желаемая занятость: стажировка/частичная занятость</p>
+            <p>Позиция: Intern/Junior developer</p>
+            <p>Занятость: стажировка/частичная занятость</p>
         </div>
     </section>
 
@@ -109,7 +106,10 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Опыт работы</h2>
-                    <p>Молодёжный центр "Диалог"</p>
+                    <h4>
+                        <img src="resources/images/logos/dialog.png" alt="Dialog logo" align="middle" width="60px">
+                        Молодёжный центр "Диалог" (2014-2017)
+                    </h4>
                     <p>Имею большой опыт работы в "Трудовых отрядах старшеклассников" - не понаслышке знаком с ручным
                         низкоквалифицированным трудом: уборка и ремонт помещений, благоустройство парковых и дворовых
                         зон, что выработало во мне трудовую дисциплину.</p>
@@ -123,7 +123,10 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Образование</h2>
-                    <h3>Университет ИТМО (2018-2022)</h3>
+                    <h4>
+                        <img src="resources/images/logos/itmo.png" alt="ITMO University logo" align="middle" width="120px">
+                        Университет ИТМО (2018-2022)
+                    </h4>
                     <p>
                         <a href="https://itmo.ru/ru/viewfaculty/104/fakultet_programmnoy_inzhenerii_i_kompyuternoy_tehniki.htm">Факультет программной инженерии и компьютерной техники</a>
                     </p>
@@ -154,6 +157,78 @@
                     <h2>Навыки</h2>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Windows</h5>
+                    <img src="resources/images/logos/windows.svg" alt="Microsoft Windows logo">
+                    <p class="text-justify">Уверенный пользователь Windows, очень хорошо знаю и понимаю это систему.</p>
+                </div>
+                <div class="col">
+                    <h5>Unix</h5>
+                    <img src="resources/images/logos/linux.png" alt="Linux OS mascot">
+                    <p class="text-justify"> Имею базовые навыки работы с Unix-системами (ssh, scp, управление файловой системой через терминал),
+                        переменные окружения).</p>
+                </div>
+                <div class="col">
+                    <h5>ОПП, SOLID, GOF</h5>
+                    <img src="resources/images/logos/oop.png" alt="Object-orientied programming icon">
+                    <p class="text-justify">Пониманию принципы ООП и умею писать чистый и расширяемый код согласно SOLID.
+                        Знаю базовые GOF-паттерны и умею их применять.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Git</h5>
+                    <img src="resources/images/logos/git.svg" alt="Git logo">
+                    <p class="text-justify">Умею пользоваться системами контроля версий: неплохо знаю git, имел опыт использования svn.</p>
+                </div>
+                <div class="col">
+                    <h5>Sql</h5>
+                    <img src="resources/images/logos/postgres.svg" alt="Postgres logo">
+                    <p class="text-justify">Использовал SQL для построения и управления реляционными БД (конкретно Postgres).</p>
+                </div>
+                <div class="col">
+                    <h5>JavaScript</h5>
+                    <img src="resources/images/logos/javascript.svg" alt="JS logo">
+                    <p class="text-justify">Базовые навыки веб-программирования (HTML + CSS + чистый JS) или Vue (с помощью npm).</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Java</h5>
+                    <img src="resources/images/logos/java.svg" alt="Java logo">
+                    <p class="text-justify">Уверенные знания Java SE (ООП, исключения, коллекции, потоки, JDBC). Самый сложные проект:
+                    клиент (JavaFX) – серверное (console) приложения, обменивающиеся Json-данными через сокеты.
+                    Сервер обрабатывал соединение каждого клиента в своём потоке и сохранял принадлежащие ему
+                    данные в БД.</p>
+                </div>
+                <div class="col">
+                    <h5>Java EE</h5>
+                    <img src="resources/images/logos/glassfish.png" alt="Glassfish server logo">
+                    <p class="text-justify">Имел опыт создания веб-приложений на JSP, JSF, также работал с некоторыми частями JavaEE
+                        (настраивал Glassfish, использовал JPA для сохранения сущностей в БД, писал MBean-ы для контроля
+                        из JConsole и VisualVM).</p>
+                </div>
+                <div class="col">
+                    <h5>Spring Framework</h5>
+                    <img src="resources/images/logos/spring.svg" alt="Spring Framework logo">
+                    <p class="text-justify">Использовал Spring Framework для создания REST-сервиса с регистрацией, авторизацией, отправкой
+                        почты с помощью JavaMail API, поддержкой сессий с помощью JsonWebToken, настраивал CORS-заголовки.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>JUnit, Ant, Maven, Gradle</h5>
+                    <img src="resources/images/logos/maven.png" alt="Maven logo">
+                    <p class="text-justify">Умею писать документацию Jdoc и юнит-тесты с помощью JUnit 5; писал простые
+                    Ant-сценарии; немного использовал системы сборки Maven и Gradle.</p>
+                </div>
+                <div class="col">
+                    <h5>Kotlin</h5>
+                    <img src="resources/images/logos/kotlin.svg" alt="Kotlin language logo">
+                    <p class="text-justify">Знаю Kotlin и умею использовать его в Java-проектах.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -164,6 +239,8 @@
                     <h2>Контакты</h2>
                     <p>Почта: <a href="mailto:kulbakowork@mail.ru">kulbakowork@mail.ru (предпочитаемый способ связи)</a></p>
                     <p>Телефон: <a href="tel:+7952-382-5644">+7-952-382-5644</a></p>
+                    <p>VK: <a href="https://vk.com/greatreflector">greatreflector</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/testpassword/">testpassword</a></p>
                 </div>
             </div>
         </div>
@@ -172,16 +249,49 @@
     <footer>
         <div id="credit" class="container text-center">
             <img src="resources/images/avatar.png" align="middle" alt="Аватар разработчика">
-            <a href="https://github.com/testpassword" class="illuminated animated" title="Перейти к профилю Github разработчика">Github разработчика</a>
-            <!--TODO: использованные библиотеки, технологии и т.д.-->
+            <a href="https://github.com/testpassword" class="btn btn-outline-primary">Мой Github</a>
+            <br>
+            <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-sm">Использованные материалы</button>
+
+            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <p><b>Библиотеки:</b></p>
+                                <p><a href="https://getbootstrap.com/docs/4.3/getting-started/download/">Bootstrap 4.3.1</a></p>
+                                <p><a href="https://jquery.com/download/">JQuery 3.5.1</a></p>
+                                <p><a href="https://cdnjs.com/libraries/jquery-easing">JQuery-easing 1.4.1</a></p>
+                                <p><a href="https://cdnjs.com/libraries/font-awesome">Font Awesome 5.13.1</a></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><b>Шрифт:</b></p>
+                                <p><a href="https://www.jetbrains.com/ru-ru/lp/mono/">JetBrains Mono</a></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><b>Медиа:</b></p>
+                                <p><a href="https://www.pexels.com/ru-ru/video/3320966/">Фоновое видео</a></p>
+                                <p><a href="https://www.freesoundeffects.com/free-track/nmh-scream1-466424/">Звук</a></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><b>Код:</b></p>
+                                <p><a href="https://gist.github.com/lqt0223/8a258b68ae1c032fa1fb1e26c4965e8d">Хроматические аберрации</a></p>
+                                <p><a href="https://github.com/AppLoidx/siberian-fires">Вдохновение для дизайна</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="resources/scripts/scroll.js"></script>
-    <script src="resources/scripts/chromatic.js"></script>
+    <script src="resources/js/scroll.js"></script>
+    <script src="resources/js/chromatic.js"></script>
+    <script src="resources/js/screamer.js"></script>
 </body>
 
 </html>
