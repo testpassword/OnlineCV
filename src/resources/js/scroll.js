@@ -25,5 +25,3 @@
     navBarCollapse()
     $(window).scroll(navBarCollapse)
 })(jQuery)
-
-//TODO локализация

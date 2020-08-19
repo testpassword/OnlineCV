@@ -40,13 +40,16 @@
                         <a class="nav-link js-scroll-trigger" href="#experience">Опыт</a>
                     </li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#skills">Навыки</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
+                        <a class="nav-link js-scroll-trigger" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
                         <a class="nav-link js-scroll-trigger" href="#education">Образование</a>
                     </li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation">
                         <a class="nav-link js-scroll-trigger" href="#languages">Языки</a>
-                    </li>
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation">
-                        <a class="nav-link js-scroll-trigger" href="#skills">Навыки</a>
                     </li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation">
                         <a class="nav-link js-scroll-trigger" href="#contacts">Контакты</a>
@@ -85,7 +88,24 @@
                 </div>
                 <div class="col">
                     <p id="name">Кульбако Артемий Юрьевич</p>
-                    <p>Мужчина, 20 лет</p>
+                    <p id="age">
+                        Мужчина,
+                        <script type="text/javascript">
+                            const myAge = Math.floor((new Date() - new Date("2000-01-22").getTime()) / 3.15576e+10)
+                            switch (myAge % 10) {
+                                case 1:
+                                    document.write(`${myAge} год`)
+                                    break
+                                case 2:
+                                case 3:
+                                case 4:
+                                    document.write(`${myAge} года`)
+                                    break
+                                default:
+                                    document.write(`${myAge} лет`)
+                            }
+                        </script>
+                    </p>
                     <p>Место проживания - Санкт-Петербург</p>
                     <p>Гражданство - Российская Федерация</p>
                 </div>
@@ -120,6 +140,173 @@
         </div>
     </section>
 
+    <section id="skills" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Навыки</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Windows</h5>
+                    <img src="resources/images/logos/windows.svg" alt="Microsoft Windows logo">
+                    <p class="text-justify">
+                        Уверенный пользователь Windows, очень хорошо знаю и понимаю эту систему. Умею писать несложные bat-скрипты.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>Unix</h5>
+                    <img src="resources/images/logos/linux.png" alt="Linux OS mascot">
+                    <p class="text-justify">
+                        Имею базовые навыки работы с Unix-системами: ssh, scp, управление файловой системой через терминал,
+                        переменные окружения, простые bash-скрипты.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>ОПП, SOLID, GOF</h5>
+                    <img src="resources/images/logos/oop.png" alt="Object-orientied programming icon">
+                    <p class="text-justify">
+                        Пониманию принципы ООП и умею писать чистый и расширяемый код согласно SOLID. Знаю базовые
+                        GOF-паттерны и умею их применять.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Git</h5>
+                    <img src="resources/images/logos/git.svg" alt="Git logo">
+                    <p class="text-justify">
+                        Умею пользоваться системами контроля версий: неплохо знаю git, имел опыт использования svn.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>Sql</h5>
+                    <img src="resources/images/logos/postgres.svg" alt="Postgres logo">
+                    <p class="text-justify">
+                        Использовал SQL для построения и управления реляционными БД (конкретно Postgres).
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>JavaScript</h5>
+                    <img src="resources/images/logos/javascript.svg" alt="JS logo">
+                    <p class="text-justify">
+                        Обладаю навыками веб-программирования (HTML + CSS + чистый JS) или Vue.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Java</h5>
+                    <img src="resources/images/logos/java.svg" alt="Java logo">
+                    <p class="text-justify">
+                        Уверенные знания Java SE (ООП, исключения, коллекции, потоки, JDBC). Самый сложные проект:
+                        клиент (JavaFX) – серверное (console) приложения, обменивающиеся Json-данными через сокеты.
+                        Сервер обрабатывал соединение каждого клиента в своём потоке и сохранял принадлежащие ему
+                        данные в БД.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>Java EE</h5>
+                    <img src="resources/images/logos/glassfish.png" alt="Glassfish server logo">
+                    <p class="text-justify">
+                        Имел опыт создания веб-приложений на JSP, JSF, также работал с некоторыми частями JavaEE
+                        (настраивал Glassfish, использовал JPA для сохранения сущностей в БД, писал MBean-ы для контроля
+                        из JConsole и VisualVM).
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>Spring Framework</h5>
+                    <img src="resources/images/logos/spring.svg" alt="Spring Framework logo">
+                    <p class="text-justify">
+                        Использовал Spring Framework для создания REST-сервиса с регистрацией, авторизацией, отправкой
+                        почты с помощью JavaMail API, поддержкой сессий с помощью JsonWebToken, настраивал CORS-заголовки.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>JUnit, Ant, Maven, Gradle</h5>
+                    <img src="resources/images/logos/maven.png" alt="Maven logo">
+                    <p class="text-justify">
+                        Умею писать документацию Jdoc и несложные юнит-тесты с помощью JUnit; писал простые
+                        Ant-сценарии; немного использовал системы сборки Maven и Gradle.
+                    </p>
+                </div>
+                <div class="col">
+                    <h5>Kotlin</h5>
+                    <img src="resources/images/logos/kotlin.svg" alt="Kotlin language logo">
+                    <p class="text-justify">
+                        Знаю Kotlin и умею использовать его в Java-проектах.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Проекты</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>CPQ-ETU_Edition</h5>
+                    <img src="resources/images/screenshots/CPQ.png" alt="Program main window screenshot" align="left" width="450px">
+                    <p class="text-justify">
+                        Программа поможет школьникам, изучающим физику, вспомнить основные формулы, величины и законы.
+                        Пользователи приложения «Физический справочник» могут быстро провести расчёты для необходимой
+                        формулы, а также узнать основные характеристики искомой величины, не обращаясь к глобальной
+                        паутине или справочной литературе, что положительно скажется на продуктивности их подготовки к
+                        экзаменам. «Физический справочник» содержит более 50 формул, каждая с краткой справочной информацией.
+                    </p>
+                    <b>Стек: Object Pascal, The Visual Component Library</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>TCP-обменник</h5>
+                    <img src="resources/images/screenshots/tcp-share.jpg" alt="Client window screenshot" align="left" width="450px">
+                    <p class="text-justify">
+                        Клиент-серверное приложение с регистрацией, авторизацией на "чистой" Java, передающее данные о
+                        пользовательских объектах посредством TCP в формате JSON и отображающее их на глобальной карте и
+                        таблице. Пользователи могут просматривать все объекты и модифицировать собственные. Клиент
+                        локализован для нескольких стран.
+                    </p>
+                    <b>Стек: Java, JavaFX, PostgreSQL</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Комплекс программ, реализующих методы вычислительной математики</h5>
+                    <img src="resources/images/screenshots/comp_math.png" alt="Screenshot of one of the programs" align="left" width="450px">
+                    <p class="text-justify">
+                        Создал несколько утилит, умеющих находить решения систем линейных и нелинейных алгебраических
+                        уравнений, задачи Коши; интегрировать, аппроксимировать и интерполировать функции.
+                    </p>
+                    <b>Стек: Kotlin, JavaFX</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>GraphSniper</h5>
+                    <img src="resources/images/screenshots/graph-sniper.png"
+                         alt="Main web-page with checker and results table" align="left" width="450px">
+                    <p class="text-justify">
+                        Многостраничное REST веб-приложение на Vue CLI, проверяющее факт попадания точки в заданную область
+                        авторизированного пользователя. Бэкенд на Spring отвечает за валидацию данных и их сохранение,
+                        проверку заголовков и поддержку JWT-сессий, контроль с помощью MBean-ов.
+                    </p>
+                    <b>Стек: Java, Spring Framework, JavaScript, Vue, PostgreSQL</b>
+                </div>
+            </div>
+            <br>
+            <h6><b>Исходный код всех проектов доступен в github-репозитории внизу страницы.</b></h6>
+        </div>
+    </section>
+
     <section id="education" class="content-section text-center">
         <div class="container">
             <div class="row">
@@ -130,14 +317,20 @@
             <div class="row">
                 <div class="col">
                     <h5>Гимназия №5 (2009-2018)</h5>
+                    <h6>Среднее общее</h6>
                     <img src="resources/images/logos/school.svg" alt="School logo" align="middle" width="100px">
                     <p><a href="http://sch5.edu.sbor.net/">Сайт школы</a></p>
                 </div>
                 <div class="col">
                     <h5>Университет ИТМО (2018-2022)</h5>
+                    <h6>Бакалавриат</h6>
                     <img src="resources/images/logos/itmo.png" alt="ITMO University logo" align="middle" width="120px">
-                    <p><a href="https://itmo.ru/ru/viewfaculty/104/fakultet_programmnoy_inzhenerii_i_kompyuternoy_tehniki.htm">Факультет программной инженерии и компьютерной техники</a></p>
-                    <p><a href="https://abit.itmo.ru/program/13297/">Направление подготовки - 09.03.04 Программная инженерия</a></p>
+                    <p><a href="https://itmo.ru/ru/viewfaculty/104/fakultet_programmnoy_inzhenerii_i_kompyuternoy_tehniki.htm">
+                            Факультет программной инженерии и компьютерной техники
+                    </a></p>
+                    <p><a href="https://abit.itmo.ru/program/13297/">
+                        Направление подготовки - 09.03.04 Программная инженерия
+                    </a></p>
                 </div>
             </div>
         </div>
@@ -155,95 +348,12 @@
         </div>
     </section>
 
-    <section id="skills" class="content-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>Навыки</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5>Windows</h5>
-                    <img src="resources/images/logos/windows.svg" alt="Microsoft Windows logo">
-                    <p class="text-justify">Уверенный пользователь Windows, очень хорошо знаю и понимаю эту систему. Умею писать несложные bat-скрипты.</p>
-                </div>
-                <div class="col">
-                    <h5>Unix</h5>
-                    <img src="resources/images/logos/linux.png" alt="Linux OS mascot">
-                    <p class="text-justify"> Имею базовые навыки работы с Unix-системами: ssh, scp, управление файловой системой через терминал,
-                        переменные окружения, простые bash-скрипты.</p>
-                </div>
-                <div class="col">
-                    <h5>ОПП, SOLID, GOF</h5>
-                    <img src="resources/images/logos/oop.png" alt="Object-orientied programming icon">
-                    <p class="text-justify">Пониманию принципы ООП и умею писать чистый и расширяемый код согласно SOLID.
-                        Знаю базовые GOF-паттерны и умею их применять.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5>Git</h5>
-                    <img src="resources/images/logos/git.svg" alt="Git logo">
-                    <p class="text-justify">Умею пользоваться системами контроля версий: неплохо знаю git, имел опыт использования svn.</p>
-                </div>
-                <div class="col">
-                    <h5>Sql</h5>
-                    <img src="resources/images/logos/postgres.svg" alt="Postgres logo">
-                    <p class="text-justify">Использовал SQL для построения и управления реляционными БД (конкретно Postgres).</p>
-                </div>
-                <div class="col">
-                    <h5>JavaScript</h5>
-                    <img src="resources/images/logos/javascript.svg" alt="JS logo">
-                    <p class="text-justify">Обладаю навыками веб-программирования (HTML + CSS + чистый JS) или Vue.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5>Java</h5>
-                    <img src="resources/images/logos/java.svg" alt="Java logo">
-                    <p class="text-justify">Уверенные знания Java SE (ООП, исключения, коллекции, потоки, JDBC). Самый сложные проект:
-                    клиент (JavaFX) – серверное (console) приложения, обменивающиеся Json-данными через сокеты.
-                    Сервер обрабатывал соединение каждого клиента в своём потоке и сохранял принадлежащие ему
-                    данные в БД.</p>
-                </div>
-                <div class="col">
-                    <h5>Java EE</h5>
-                    <img src="resources/images/logos/glassfish.png" alt="Glassfish server logo">
-                    <p class="text-justify">Имел опыт создания веб-приложений на JSP, JSF, также работал с некоторыми частями JavaEE
-                        (настраивал Glassfish, использовал JPA для сохранения сущностей в БД, писал MBean-ы для контроля
-                        из JConsole и VisualVM).</p>
-                </div>
-                <div class="col">
-                    <h5>Spring Framework</h5>
-                    <img src="resources/images/logos/spring.svg" alt="Spring Framework logo">
-                    <p class="text-justify">Использовал Spring Framework для создания REST-сервиса с регистрацией, авторизацией, отправкой
-                        почты с помощью JavaMail API, поддержкой сессий с помощью JsonWebToken, настраивал CORS-заголовки.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5>JUnit, Ant, Maven, Gradle</h5>
-                    <img src="resources/images/logos/maven.png" alt="Maven logo">
-                    <p class="text-justify">Умею писать документацию Jdoc и юнит-тесты с помощью JUnit 5; писал простые
-                    Ant-сценарии; немного использовал системы сборки Maven и Gradle.</p>
-                </div>
-                <div class="col">
-                    <h5>Kotlin</h5>
-                    <img src="resources/images/logos/kotlin.svg" alt="Kotlin language logo">
-                    <p class="text-justify">Знаю Kotlin и умею использовать его в Java-проектах.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contacts" class="content-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Контакты</h2>
                     <p>Почта: <a href="mailto:kulbakowork@mail.ru">kulbakowork@mail.ru (предпочитаемый способ связи)</a></p>
-                    <p>Телефон: <a href="tel:+7952-382-5644">+7-952-382-5644</a></p>
                     <p>VK: <a href="https://vk.com/greatreflector">greatreflector</a></p>
                     <p>Instagram: <a href="https://www.instagram.com/testpassword/">testpassword</a></p>
                 </div>
@@ -291,7 +401,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="resources/js/scroll.js"></script>

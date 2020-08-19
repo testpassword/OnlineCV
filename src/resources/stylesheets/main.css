@@ -3,13 +3,9 @@
     src: url("../fonts/JetBrainsMono-Regular.ttf");
 }
 
-* {
-    font-family: "JetBrains Mono" !important;
-}
+* { font-family: "JetBrains Mono" !important }
 
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free" !important;
-}
+.fa, .far, .fas { font-family: "Font Awesome 5 Free" !important }
 
 .fullscreen-bg-video {
     position: absolute;
@@ -45,9 +41,7 @@ a:hover, a:focus {
     color: black !important;
 }
 
-.list-group {
-    color: black;
-}
+.list-group { color: black }
 
 #skills img {
     width: 80px;
@@ -55,12 +49,11 @@ a:hover, a:focus {
     margin: 10px;
 }
 
-#skills .col, #education .col, #experience .col {
-    padding: 30px;
-}
+#projects img { margin-right: 50px }
 
-#skills .col:hover, #skills .col:focus, #education .col:hover, #education .col:focus, #experience .col:hover,
-#experience .col:focus {
+#skills .col, #education .col, #experience .col, #projects .col { padding: 30px }
+
+.col:hover, .col:focus {
     transition: 0.455s;
     transform: scale(1.035);
     box-shadow: 0 0 40px 5px #1d9b6c;
