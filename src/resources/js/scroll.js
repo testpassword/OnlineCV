@@ -12,16 +12,13 @@
             }
         }
     })
-
     $(".js-scroll-trigger").click(() => $(".navbar-collapse").collapse("hide"))
     $("body").scrollspy({ target: "#mainNav", offset: 54 })
-
     const selector = "#mainNav"
     const navBarCollapse = function() {
         if ($(selector).offset().top > 100) $(selector).addClass("navbar-shrink")
         else $(selector).removeClass("navbar-shrink")
     }
-
     navBarCollapse()
     $(window).scroll(navBarCollapse)
 })(jQuery)

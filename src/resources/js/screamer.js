@@ -36,7 +36,6 @@ class Screamer {
             canvas.getContext("2d").drawImage(this.picture, 0, 0, width, height)
             this.audio.play()
             root.appendChild(canvas)
-            //TODO: animation
         })
     }
 }
